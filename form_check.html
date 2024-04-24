@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row text-center my-5">
+            <h2>この度は電気のやりくりシミュレーションに<br>お申込みいただきありがとうございました。</h2>
+        </div>
+        <div class="row fs-5 px-4 text-center py-5">
+            <p>お客様のご連絡のつきやすいお時間に、<br>電気のやりくりシミュレーションに関する<br>案内のお電話を差し上げます。</p>
+            <p>担当よりご連絡まで今しばらくお待ちください。</p>
+        </div>
+        <div class="row text-center">
+            <p>
+                申し込みは完了しました。<br>
+                当ページは<span id="time" class="time">30</span>秒後に自動で最初のページへ遷移します。
+            </p>
+
+        </div>
+    </div>
+    <script>
+        setTimeout(function(){
+        window.location.href = 'index.html';
+        }, 30000);
+
+        let count = 30;
+    </script>
+</body>
+</html>
