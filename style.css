@@ -29,27 +29,18 @@ body {
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(223,223,223,1) 0%, rgba(255,255,255,1) 100%);
 }
 
-a{
+.privacy-link a{
     text-decoration: none;
     border-bottom: 1px solid black;
 }
 
-a:hover {
+.privacy-link a:hover {
     border-bottom: 2px solid black;
 }
 
 .error {
     color: red;
     font-size: 10px;
-}
-
-.logo-link{
-    text-decoration: none;
-    border-bottom: none;
-}
-.logo-link:hover{
-    text-decoration: none;
-    border-bottom: none;
 }
 
 
