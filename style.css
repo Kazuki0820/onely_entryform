@@ -43,6 +43,16 @@ a:hover {
     font-size: 10px;
 }
 
+.logo-link{
+    text-decoration: none;
+    border-bottom: none;
+}
+.logo-link:hover{
+    text-decoration: none;
+    border-bottom: none;
+}
+
+
 @media (max-width: 768px){
     table {
         font-size: 14px;

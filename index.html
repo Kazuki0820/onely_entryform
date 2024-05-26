@@ -18,7 +18,9 @@
         <div class="row">
             <div class="col-10 mx-auto">
                 <div class="row">
-                    <img class="logo-img" src="img/logo_onely.png" alt="">
+                    <a href="https://www.onely.group/" class="logo-link">
+                        <img class="logo-img" src="img/logo_onely.png" alt="">
+                    </a>
                 </div>
                 <div class="row">
                     <img class="main-img d-none d-md-block" src="img/3230220_m.jpg" alt="">
@@ -37,6 +39,23 @@
                                     <div class="box"></div>
                                     基本情報
                                 </th>
+                            </tr>
+                            <tr>
+                                <th class="align-middle text-left fw-normal col-4">チラシコード<span class="badge bg-danger mx-3">必須</span></th>
+                            </tr>
+                            <tr>
+                                <td class="col-8 table-light">
+                                    <div class="td-content">
+                                        <div class="row">
+                                            <div class="col ms-1 my-2">
+                                                <select class="form-select" name="tirashi-code" id="">
+                                                    <option value="">チラシコードを選択</option>
+                                                    <option value="00001">00001</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <th class="align-middle text-left fw-normal col-4">お名前(全角)<span class="badge bg-danger mx-3">必須</span></th>
@@ -161,15 +180,15 @@
                                             </div>
                                         </div>
                                         <div class="row  my-2">
-                                            <label class="col-form-label col-5 fw-normal ms-1 align-middle" for="city">市区群町村番地<span class="badge bg-danger mx-3">必須</span></label>
+                                            <label class="col-form-label col-5 fw-normal ms-1 align-middle" for="city">市区群町村<span class="badge bg-danger mx-3">必須</span></label>
                                             <div class="col-6">
                                                 <input class="form-control form-control-sm" type="text" id="city" name="city">
                                             </div>
                                         </div>
                                         <div class="row  my-2">
-                                            <label class="col-form-label col-5 fw-normal ms-1 align-middle" for="apart_mansyon">マンション・アパート名</label>
+                                            <label class="col-form-label col-5 fw-normal ms-1 align-middle" for="banti">番地<span class="badge bg-danger mx-3">必須</span></label>
                                             <div class="col-6">
-                                                <input class="form-control form-control-sm" type="text" id="apart_mansyon"  name="apart_mansyon">
+                                                <input class="form-control form-control-sm" type="text" id="banti"  name="banti">
                                             </div>
                                             
                                         </div>
@@ -198,7 +217,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th class="align-middle text-left fw-normal col-4">固定電話番号(半角英数)<span class="badge bg-danger mx-3">必須</span></th>
+                                <th class="align-middle text-left fw-normal col-4">固定電話番号(半角英数)<span class="badge bg-danger mx-3">どちらか必須</span></th>
                             </tr>
                             <tr>
                                 <td class="col-8 table-light">
@@ -220,7 +239,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th class="align-middle text-left fw-normal col-4">携帯電話番号(半角英数)</th>
+                                <th class="align-middle text-left fw-normal col-4">携帯電話番号(半角英数)<span class="badge bg-danger mx-3">どちらか必須</span></th>
                             </tr>
                             <tr>
                                 <td class="col-8 table-light">
@@ -245,6 +264,11 @@
                                 <th class="align-middle text-left px-3 py-3 fs-6 head-t border">
                                     <div class="box"></div>
                                     ご連絡がつきやすい日時
+                                    <div class="row fw-normal pt-3 fs-6 text-dark">
+                                        <span class="text-danger">担当よりお電話させていただきます。</span>
+                                        <br>
+                                        <span>ご連絡希望をお聞かせください。</span>
+                                    </div>
                                 </th>
                             </tr>
                             <tr>
@@ -278,7 +302,7 @@
                                                     <option value="10:00 ~ 12:00">10:00 ~ 12:00</option>
                                                     <option value="12:00 ~ 15:00">12:00 ~ 15:00</option>
                                                     <option value="15:00 ~ 18:00">15:00 ~ 18:00</option>
-                                                    <option value=""18:00 以降>18:00 以降</option>
+                                                    <option value="18:00 以降">18:00 以降</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -311,6 +335,24 @@
                             </tr>
                             <tr>
                                 <div class="row">
+                                    <th class="fs-6 align-middle text-left fw-normal col-4">チラシコード<span class="badge bg-danger mx-3">必須</span></th>
+                                    <td class="col-8 table-light">
+                                        <div class="td-content">
+                                            <div class="row">
+                                                <div class="col ms-1">
+                                                    <select class="form-select" name="tirashi-code_2" id="">
+                                                        <option value="">チラシコードを選択</option>
+                                                        <option value="00001">00001</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </div>
+                                
+                            </tr>
+                            <tr>
+                                <div class="row">
                                     <th class="align-middle text-left fw-normal col-4">お名前(全角)<span class="badge bg-danger mx-3">必須</span></th>
                                     <td class="col-8 table-light">
                                         <div class="td-content">
@@ -318,13 +360,13 @@
                                                 <div class="col-6">
                                                     <span class="d-inline-flex text-nowrap">
                                                         姓
-                                                        <input class="form-control form-control-sm ms-1 py-1" type="text" name="name_sei_kanji">
+                                                        <input class="form-control form-control-sm ms-1 py-1" type="text" name="name_sei_kanji_2">
                                                     </span>
                                                 </div>
                                                 <div class="col-6">
                                                     <span class="d-inline-flex text-nowrap">
                                                         名
-                                                        <input class="form-control form-control-sm ms-1 py-1" type="text" name="name_mei_kanji">
+                                                        <input class="form-control form-control-sm ms-1 py-1" type="text" name="name_mei_kanji_2">
                                                     </span>
                                                 </div>
                                             </div>
@@ -341,13 +383,13 @@
                                                 <div class="col-6">
                                                     <span class="d-inline-flex text-nowrap">
                                                         セイ
-                                                        <input class="form-control form-control-sm ms-1 py-1" type="text" name="name_mei_kana">
+                                                        <input class="form-control form-control-sm ms-1 py-1" type="text" name="name_mei_kana_2">
                                                     </span>
                                                 </div>
                                                 <div class="col-6">
                                                     <span class="d-inline-flex text-nowrap">
                                                         メイ
-                                                        <input class="form-control form-control-sm ms-1 py-1" type="text" name="name_mei_kana">
+                                                        <input class="form-control form-control-sm ms-1 py-1" type="text" name="name_mei_kana_2">
                                                     </span>
                                                 </div>
                                             </div>
@@ -432,15 +474,15 @@
                                                 </div>
                                             </div>
                                             <div class="row py-1">
-                                                <label class="col-form-label col-5 fw-normal ms-1 align-middle" for="">市区群町村番地<span class="badge bg-danger mx-3">必須</span></label>
+                                                <label class="col-form-label col-5 fw-normal ms-1 align-middle" for="">市区群町村<span class="badge bg-danger mx-3">必須</span></label>
                                                 <div class="col-6">
                                                     <input class="form-control form-control-sm" type="text" id="city-2" name="city_2">
                                                 </div>
                                             </div>
                                             <div class="row py-1">
-                                                <label class="col-form-label col-5 fw-normal ms-1 align-middle" for="">マンション・アパート名</label>
+                                                <label class="col-form-label col-5 fw-normal ms-1 align-middle" for="">番地<span class="badge bg-danger mx-3">必須</span></label>
                                                 <div class="col-6">
-                                                    <input class="form-control form-control-sm" type="text" name="apart_mansyon_2">
+                                                    <input class="form-control form-control-sm" type="text" name="banti_2">
                                                 </div>
                                                 
                                             </div>
@@ -456,14 +498,14 @@
                                         <div class="td-content">
                                             <div class="row">
                                                 <div class="col-10 ms-1">
-                                                    <input class="form-control form-control-sm py-1" type="text" id="email2" name="email">
+                                                    <input class="form-control form-control-sm py-1" type="text" id="email2" name="email_2">
                                                 </div>
                                                 
                                             </div>
                                             <span class="ms-1 align-middle">確認のため再入力お願いします。</span>
                                             <div class="row">
                                                 <div class="col-10 ms-1">
-                                                    <input class="form-control form-control-sm py-1" type="text" name="email_checked2">
+                                                    <input class="form-control form-control-sm py-1" type="text" name="email_checked2_2">
                                                 </div>
                                             </div>
                                         </div>
@@ -473,20 +515,20 @@
                             </tr>
                             <tr>
                                 <div class="row">
-                                    <th class="fs-6 align-middle text-left fw-normal col-4">固定電話番号(半角英数)<span class="badge bg-danger mx-3">必須</span></th>
+                                    <th class="fs-6 align-middle text-left fw-normal col-4">固定電話番号(半角英数)<span class="badge bg-danger mx-3">どちらか必須</span></th>
                                     <td class="col-8 table-light">
                                         <div class="td-content">
                                             <div class="row align-middle py-1">
                                                 <div class="col ms-1">
-                                                    <input class="form-control form-control-sm" type="text" name="home_phone1">
+                                                    <input class="form-control form-control-sm" type="text" name="home_phone1_2">
                                                 </div>
                                                 -
                                                 <div class="col">
-                                                    <input class="form-control form-control-sm" type="text" name="home_phone2">
+                                                    <input class="form-control form-control-sm" type="text" name="home_phone2_2">
                                                 </div>
                                                 -
                                                 <div class="col">
-                                                    <input class="form-control form-control-sm" type="text" name="home_phone3">
+                                                    <input class="form-control form-control-sm" type="text" name="home_phone3_2">
                                                 </div>
                                             </div>
                                         </div>
@@ -496,20 +538,20 @@
                             </tr>
                             <tr>
                                 <div class="row">
-                                    <th class="fs-6 align-middle text-left fw-normal col-4">携帯電話番号(半角英数)</th>
+                                    <th class="fs-6 align-middle text-left fw-normal col-4">携帯電話番号(半角英数)<span class="badge bg-danger mx-3">どちらか必須</span></th>
                                     <td class="col-8 table-light">
                                         <div class="td-content">
                                             <div class="row align-middle py-1">
                                                 <div class="col ms-1">
-                                                    <input class="form-control form-control-sm" type="text" name="mobile_phone1">
+                                                    <input class="form-control form-control-sm" type="text" name="mobile_phone1_2">
                                                 </div>
                                                 -
                                                 <div class="col">
-                                                    <input class="form-control form-control-sm" type="text" name="mobile_phone2">
+                                                    <input class="form-control form-control-sm" type="text" name="mobile_phone2_2">
                                                 </div>
                                                 -
                                                 <div class="col">
-                                                    <input class="form-control form-control-sm" type="text" name="mobile_phone3">
+                                                    <input class="form-control form-control-sm" type="text" name="mobile_phone3_2">
                                                 </div>
                                             </div>
                                         </div>
@@ -521,6 +563,11 @@
                                 <th class="align-middle text-left px-3 py-3 fs-5 head-t border"  colspan="3">
                                     <div class="box"></div>
                                     ご連絡がつきやすい日時
+                                    <div class="row fw-normal pt-3 fs-6 text-dark">
+                                        <span class="text-danger">担当よりお電話させていただきます。</span>
+                                        <br>
+                                        <span>ご連絡希望をお聞かせください。</span>
+                                    </div>
                                 </th>
                             </tr>
                             <tr>
@@ -554,7 +601,7 @@
                                                         <option value="10:00 ~ 12:00">10:00 ~ 12:00</option>
                                                         <option value="12:00 ~ 15:00">12:00 ~ 15:00</option>
                                                         <option value="15:00 ~ 18:00">15:00 ~ 18:00</option>
-                                                        <option value=""18:00 以降>18:00 以降</option>
+                                                        <option value="18:00 以降">18:00 以降</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -629,6 +676,9 @@
 <script>
     $('#js-mainForm').validate({
         rules: {
+            tirashi_code: {
+                required: true
+            },
             name_sei_kanji: {
                 required: true
             },
@@ -653,25 +703,13 @@
             city: {
                 required: true
             },
-            home_phone1: {
-                required: true
-            },
-            home_phone2: {
-                required: true
-            },
-            home_phone3: {
+            banti: {
                 required: true
             },
             ok_day: {
                 required: true
             },
             ok_time: {
-                required: true
-            },
-            ok_day_2: {
-                required: true
-            },
-            ok_time_2: {
                 required: true
             },
             email: {
@@ -695,6 +733,21 @@
             privacypolicy: {
                 required: true
             },
+            tirashi_code_2: {
+                required: true
+            },
+            name_sei_kanji_2: {
+                required: true
+            },
+            name_mei_kanji_2: {
+                required: true
+            },
+            name_sei_kana_2: {
+                required: true
+            },
+            name_mei_kana_2: {
+                required: true
+            },
             yuubin1_2: {
                 required: true
             },
@@ -707,8 +760,38 @@
             city_2: {
                 required: true
             },
+            banti_2: {
+                required: true
+            },
+            ok_day_2: {
+                required: true
+            },
+            ok_time_2: {
+                required: true
+            },
+            email_2: {
+                required: true,
+                email: true
+            },
+            email2_2: {
+                required: true,
+                email: true
+            },
+            email_checked_2: {
+                required: true,
+                email: true,
+                equalTo: "#email"
+            },
+            email_checked2_2: {
+                required: true,
+                email: true,
+                equalTo: "#email2"
+            },
         },
         messages: {
+            tirashi_code: {
+                required: "必須項目です。"
+            },
             name_sei_kanji: {
                 required: "必須項目です。"
             },
@@ -733,13 +816,7 @@
             city: {
                 required: "必須項目です。"
             },
-            home_phone1: {
-                required: "必須項目です。"
-            },
-            home_phone2: {
-                required: "必須項目です。"
-            },
-            home_phone3: {
+            banti: {
                 required: "必須項目です。"
             },
             ok_day: {
@@ -748,26 +825,35 @@
             ok_time: {
                 required: "必須項目です。"
             },
+            email: {
+                required: "必須項目です。"
+            },
+            email2: {
+                required: "必須項目です。"
+            },
+            email_checked: {
+                required: "必須項目です。"
+            },
+            email_checked2: {
+                required: "必須項目です。"
+            },
             privacypolicy: {
                 required: "必須項目です。"
             },
-            email: {
-                required: "必須項目です。",
-                email: "正しいメールアドレスを入力してください。"
+            tirashi_code_2: {
+                required: "必須項目です。"
             },
-            email2: {
-                required: "必須項目です。",
-                email: "正しいメールアドレスを入力してください。"
+            name_sei_kanji_2: {
+                required: "必須項目です。"
             },
-            email_checked: {
-                required: "必須項目です。",
-                email: "正しいメールアドレスを入力してください。",
-                equalTo:"メールアドレスが一致していません。"
+            name_mei_kanji_2: {
+                required: "必須項目です。"
             },
-            email_checked2: {
-                required: "必須項目です。",
-                email: "正しいメールアドレスを入力してください。",
-                equalTo:"メールアドレスが一致していません。"
+            name_sei_kana_2: {
+                required: "必須項目です。"
+            },
+            name_mei_kana_2: {
+                required: "必須項目です。"
             },
             yuubin1_2: {
                 required: "必須項目です。"
@@ -781,12 +867,30 @@
             city_2: {
                 required: "必須項目です。"
             },
+            banti_2: {
+                required: "必須項目です。"
+            },
             ok_day_2: {
                 required: "必須項目です。"
             },
             ok_time_2: {
                 required: "必須項目です。"
             },
+            email_2: {
+                required: "必須項目です。"
+            },
+            email2_2: {
+                required: "必須項目です。"
+            },
+            email_checked_2: {
+                required: "必須項目です。"
+            },
+            email_checked2_2: {
+                required: "必須項目です。"
+            },
+        },
+        errorPlacement: function (error, element) {
+            error.insertAfter(element)
         },
         submitHandler: function(form) {
         // do other things for a valid form
